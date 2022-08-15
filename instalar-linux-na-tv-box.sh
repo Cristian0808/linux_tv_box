@@ -4,6 +4,7 @@ wget https://cdimage.ubuntu.com/ubuntu-base/releases/22.04/release/ubuntu-base-2
 mkdir linux
 cd linux 
 tar -xvf ../ubuntu-base-22.04.1-base-armhf.tar.gz
+cd ..
 cat > .termux/boot/linux << "EOF"
 unset LD_PRELOAD
 proot -w /data/data/com.termux/files/home/linux -b /dev -b /sys -b /proc /init.sh
