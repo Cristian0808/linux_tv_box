@@ -9,6 +9,7 @@ cat > /data/data/com.termux/files/home/.termux/boot/linux << "EOF"
 unset LD_PRELOAD
 proot -r /data/data/com.termux/files/home/linux -b /dev -b /sys -b /proc  /bin/bash /init.sh
 EOF
+echo "nameserver 1.1.1.1" > /data/data/com.termux/files/home/linux/etc/resolv.conf
 cat > /data/data/com.termux/files/home/linux/init.sh << "EOF"
 #!/bin/bash
 exec /bin/bash
