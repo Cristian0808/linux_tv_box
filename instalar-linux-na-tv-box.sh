@@ -11,7 +11,6 @@ proot -r /data/data/com.termux/files/home/linux -b /dev -b /sys -b /proc  /bin/b
 EOF
 cat > /data/data/com.termux/files/home/linux/init.sh << "EOF"
 #!/bin/bash
-exec /etc/rc.local
 exec /bin/bash
 EOF
 chmod 777 linux/init.sh
