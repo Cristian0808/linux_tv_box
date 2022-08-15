@@ -7,7 +7,7 @@ tar -xvf ../ubuntu-base-22.04.1-base-armhf.tar.gz
 cd ..
 cat > /data/data/com.termux/files/home/.termux/boot/linux << "EOF"
 unset LD_PRELOAD
-proot -w /data/data/com.termux/files/home/linux -r /data/data/com.termux/files/home/linux -b /dev -b /sys -b /proc  /bin/bash /init.sh
+proot -r /data/data/com.termux/files/home/linux -b /dev -b /sys -b /proc  /bin/bash /init.sh
 EOF
 cat > /data/data/com.termux/files/home/linux/init.sh << "EOF"
 #!/bin/bash
