@@ -8,7 +8,7 @@ cd ..
 cat >> ubuntu-filesystem/root/.bashrc << EOF
 echo 'nameserver 1.1.1.1' > /etc/resolv.conf
 apt-get update
-apt-get install dropbear icecast2 -y
+apt-get install dropbear wget icecast2 -y
 adduser padrao
 groupadd -g 33 sshd
 useradd -u 33 -g 33 -c sshd -d / sshd
