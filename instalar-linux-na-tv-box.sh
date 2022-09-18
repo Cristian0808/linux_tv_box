@@ -12,7 +12,7 @@ apt-get install dropbear icecast2 -y
 adduser padrao
 groupadd -g 33 sshd
 useradd -u 33 -g 33 -c sshd -d / sshd
-wget https://pastebin.com/raw/8SU2PQGV -O /etc/icecast2/icecast.xml
+wget https://raw.githubusercontent.com/Cristian0808/linux_tv_box/main/icecast.xml -O /etc/icecast2/icecast.xml
 echo "padrao   ALL=(ALL:ALL) ALL" >> /etc/sudoers
 EOF
 cat > /data/data/com.termux/files/home/.termux/boot/linux << "EOF"
