@@ -18,7 +18,6 @@ EOF
 cat > /data/data/com.termux/files/home/.termux/boot/linux << "EOF"
 #!/data/data/com.termux/files/usr/bin/sh
 rm /data/data/com.termux/files/home/ubuntu-filesystem/root/.bashrc
-rm /data/data/com.termux/files/home/.termux/boot/instalacao
 unset LD_PRELOAD
 proot -r /data/data/com.termux/files/home/ubuntu-filesystem -0 -w / -b /dev -b /proc -b /sys /init.sh
 EOF
