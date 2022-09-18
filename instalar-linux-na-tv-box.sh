@@ -8,7 +8,7 @@ cd ..
 cat >> ubuntu-filesystem/root/.bashrc << EOF
 echo 'nameserver 1.1.1.1' > /etc/resolv.conf
 apt-get update
-apt-get install dropbear wget icecast2 -y
+apt-get install dropbear wget sudo icecast2 -y
 adduser padrao
 wget --no-check-certificate https://raw.githubusercontent.com/Cristian0808/linux_tv_box/main/icecast.xml -O /etc/icecast2/icecast.xml
 echo "padrao   ALL=(ALL:ALL) ALL" >> /etc/sudoers
