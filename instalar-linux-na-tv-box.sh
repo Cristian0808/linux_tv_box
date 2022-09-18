@@ -10,8 +10,6 @@ echo 'nameserver 1.1.1.1' > /etc/resolv.conf
 apt-get update
 apt-get install dropbear wget icecast2 -y
 adduser padrao
-groupadd -g 33 sshd
-useradd -u 33 -g 33 -c sshd -d / sshd
 wget https://raw.githubusercontent.com/Cristian0808/linux_tv_box/main/icecast.xml -O /etc/icecast2/icecast.xml
 echo "padrao   ALL=(ALL:ALL) ALL" >> /etc/sudoers
 EOF
