@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 cd /data/data/com.termux/files/home
+mkdir /data/data/com.termux/files/home/.termux/boot
 wget https://cdimage.ubuntu.com/ubuntu-base/releases/20.04/release/ubuntu-base-20.04.5-base-armhf.tar.gz -O ubuntu-base-20.04.5-base-armhf.tar.gz 
 mkdir ubuntu-filesystem
 cd ubuntu-filesystem
